@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Игорь Ячковский — генеральный директор производственной компании</title>
+<meta name="description" content="Игорь Ячковский: генеральный директор производственной компании. Деревообработка, мебельная промышленность, ДСП / ЛДСП, HPL, столешницы. 17 лет опыта, MBA ВШЭ.">
+<meta property="og:title" content="Игорь Ячковский — генеральный директор">
+<meta property="og:description" content="Производство · ДСП / ЛДСП · HPL · столешницы. 17 лет опыта, MBA ВШЭ.">
+<meta property="og:image" content="https://yachkovsky.ru/photo.png">
+<meta property="og:type" content="profile">
+<link rel="icon" href="photo.png">
+<style>
+  :root {
+    --side: #1E2A3B;
+    --side-text: #E6EAF0;
+    --side-muted: #9AA8BC;
+    --accent: #C9893A;
+    --ink: #1F2328;
+    --muted: #5B6573;
+    --line: #D5DAE0;
+    --bg: #F4F5F7;
+    --card: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink); background: var(--bg);
+    font-size: 16px; line-height: 1.55;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+
+  /* ---------- шапка ---------- */
+  header { background: var(--side); color: var(--side-text); padding: 40px 0 36px; border-bottom: 4px solid var(--accent); }
+  .hero { display: flex; gap: 28px; align-items: center; }
+  .photo { width: 132px; height: 132px; border-radius: 50%; object-fit: cover; flex: none; border: 5px solid rgba(255,255,255,.12); }
+  h1 { font-size: 34px; line-height: 1.1; color: #fff; font-weight: 700; letter-spacing: -.01em; }
+  .role { color: var(--accent); font-weight: 600; font-size: 19px; margin-top: 6px; }
+  .meta { color: var(--side-muted); margin-top: 4px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .btn { display: inline-block; text-decoration: none; padding: 9px 16px; border-radius: 6px; font-weight: 600; font-size: 15px; border: 1.5px solid var(--accent); }
+  .btn.main { background: var(--accent); color: #fff; }
+  .btn.ghost { color: var(--side-text); }
+  .btn:hover { filter: brightness(1.08); }
+
+  /* ---------- цифры ---------- */
+  .figs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: -1px 0 0; padding: 24px 0 0; }
+  .fig { background: var(--card); border-left: 4px solid var(--accent); padding: 12px 14px; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+  .fig b { display: block; font-size: 24px; line-height: 1.15; color: var(--side); }
+  .fig span { font-size: 14px; color: var(--muted); }
+
+  /* ---------- разделы ---------- */
+  section { background: var(--card); margin: 20px 0; padding: 24px 26px; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+  h2 { font-size: 14px; letter-spacing: .16em; text-transform: uppercase; color: var(--side); padding-bottom: 8px; border-bottom: 2px solid var(--side); margin-bottom: 16px; }
+  .company { font-size: 18px; font-weight: 700; color: var(--side); margin: 22px 0 10px; }
+  .company:first-of-type { margin-top: 0; }
+
+  .job { position: relative; padding-left: 22px; padding-bottom: 16px; }
+  .job::before { content: ""; position: absolute; left: 0; top: 7px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+  .job::after { content: ""; position: absolute; left: 4px; top: 20px; bottom: 0; width: 1px; background: var(--line); }
+  .job.last::after { display: none; }
+  .top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+  .pos { font-weight: 700; font-size: 17px; }
+  .dates { color: var(--muted); font-size: 14px; font-weight: 600; white-space: nowrap; }
+  .desc { margin-top: 4px; color: #2A2F36; }
+  .sub { font-size: 12.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; margin-top: 8px; }
+  ul { margin: 4px 0 0 20px; }
+  li { margin-bottom: 3px; }
+  li::marker { color: var(--accent); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid2 section { margin: 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+  .skill h3 { font-size: 15.5px; color: var(--side); margin: 10px 0 2px; }
+  .skill h3:first-child { margin-top: 0; }
+  .skill p { color: #2A2F36; font-size: 15px; }
+  .edu { margin-bottom: 12px; }
+  .edu .y { color: var(--accent); font-weight: 700; font-size: 14px; }
+  .edu b { display: block; }
+  .edu span { color: var(--muted); font-size: 14.5px; }
+  .plain p { margin-bottom: 4px; }
+  .plain span { color: var(--muted); }
+
+  footer { color: var(--muted); font-size: 14px; text-align: center; padding: 8px 0 32px; }
+
+  @media (max-width: 720px) {
+    header { padding: 28px 0 24px; }
+    .hero { flex-direction: column; text-align: center; gap: 16px; }
+    .actions { justify-content: center; }
+    h1 { font-size: 28px; }
+    .role { font-size: 17px; }
+    .figs { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .fig b { font-size: 20px; }
+    section { padding: 18px 16px; }
+    .two { grid-template-columns: 1fr; }
+  }
+  @media print {
+    body { background: #fff; }
+    .actions { display: none; }
+    section { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <img class="photo" src="photo.png" alt="Игорь Ячковский" width="132" height="132">
+    <div>
+      <h1>Игорь Ячковский</h1>
+      <div class="role">Генеральный директор производственной компании</div>
+      <div class="meta">Деревообработка · мебельная промышленность · ДСП / ЛДСП · HPL · столешницы</div>
+      <div class="meta">Санкт-Петербург · готов к переезду по России и к командировкам</div>
+      <div class="actions">
+        <a class="btn main" href="Yachkovsky_Igor_CEO.pdf" download>Скачать резюме (PDF)</a>
+        <a class="btn ghost" href="HH_URL" target="_blank" rel="noopener">Резюме на hh.ru</a>
+        <a class="btn ghost" href="mailto:igor.yachkovsky@gmail.com">igor.yachkovsky@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="figs">
+    <div class="fig"><b>10+ млрд ₽</b><span>оборот завода ДСП (Kronospan)</span></div>
+    <div class="fig"><b>600+</b><span>сотрудников в группе «Слотекс»</span></div>
+    <div class="fig"><b>+24%</b><span>EBITDA в 2023 г., рекорд компании</span></div>
+    <div class="fig"><b>11</b><span>производств на 4 площадках</span></div>
+    <div class="fig"><b>+800 млн ₽</b><span>продажи через «Леруа Мерлен»</span></div>
+    <div class="fig"><b>+30%</b><span>производительность, брак в 3 раза ниже</span></div>
+  </div>
+
+  <section>
+    <h2>Профиль</h2>
+    <p>
+      17 лет опыта, из них 12 лет в АО «Слотекс», где прошёл путь от продукт-менеджера до генерального директора
+      (группа «Слотекс»: оборот 6+ млрд руб., штат 600+ человек, 4 площадки, 11 производств). Руководил заводом ДСП группы Kronospan
+      с оборотом свыше 10 млрд руб. Полная ответственность за P&amp;L и EBITDA, строительство и запуск новых
+      производств, продажи через дилеров, B2B, розницу и DIY-сети. MBA ВШЭ, инженерное образование.
+    </p>
+  </section>
+
+  <section>
+    <h2>Опыт работы</h2>
+
+    <div class="company">ООО «Ультрадекор ГМХ» (Kronospan), Москва</div>
+    <div class="job last">
+      <div class="top"><div class="pos">Директор филиала</div><div class="dates">04.2025 — 11.2025</div></div>
+      <p class="desc">
+        Руководил заводом ДСП с оборотом свыше 10 млрд руб. и штатом 150+ сотрудников, в рамках выделения
+        филиала в самостоятельную бизнес-единицу с нуля выстраивал операционную структуру (отдел продаж,
+        планирования, HR, закупок, проектный отдел) и управлял запуском новой производственной линии.
+      </p>
+    </div>
+
+    <div class="company">АО «Слотекс», Санкт-Петербург</div>
+    <div class="job">
+      <div class="top"><div class="pos">Генеральный директор</div><div class="dates">11.2022 — 12.2024</div></div>
+      <p class="desc">
+        Отвечал за P&amp;L, EBITDA, денежные потоки и ROI группы компаний (оборот 6+ млрд руб., штат 600+ человек)
+        в разрезе четырёх производственных площадок, включающих 11 производств. Управлял продажами: дилерская сеть
+        (50+ партнёров), B2B, собственная розница, сети DIY. Ключевые направления: декоративный пластик (CPL, HPL),
+        столешницы, декоративные стеновые панели, ЛДСП.
+      </p>
+      <div class="sub">Достижения</div>
+      <ul>
+        <li>В 2023 году достиг рекордного показателя EBITDA: +24% к 2022 году.</li>
+        <li>Запустил завод (+1 млрд руб., 20 тыс. м²): рост мощностей и новые продукты HPL и столешницы (+400 млн руб. выручки в 2023 году).</li>
+        <li>Централизовал систему управления компанией.</li>
+      </ul>
+      <div class="sub">Зона ответственности</div>
+      <p class="desc">Анализ рынка и новых возможностей, вывод новых продуктов; развитие продаж и переговоры с ключевыми клиентами; строительство новых производств и модернизация мощностей; управленческая команда; автоматизация бизнес-процессов.</p>
+    </div>
+
+    <div class="job">
+      <div class="top"><div class="pos">Заместитель генерального директора</div><div class="dates">02.2022 — 10.2022</div></div>
+      <p class="desc">Управлял тремя самостоятельными бизнес-юнитами (оборот 2,5 млрд руб., 200 человек), отвечал за общегрупповые функции: инженерия, ИТ.</p>
+      <div class="sub">Достижения</div>
+      <ul>
+        <li>Запустил продажи через сеть «Леруа Мерлен»: +800 млн руб.</li>
+        <li>Запустил новое производство (4 тыс. м²) с новыми продуктами: TSS-плиты, ЛДСП.</li>
+        <li>Собрал команду автоматизации: адресное хранение на складах, потоковая сборка заказов по штрихкодам.</li>
+        <li>Организовал покупку оборудования у завода-банкрота в Европе.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><div class="pos">Директор бизнес-юнита</div><div class="dates">02.2020 — 02.2022</div></div>
+      <p class="desc">Управлял бизнес-юнитом как самостоятельным бизнесом, от производства до продаж и разработки, с полной ответственностью за P&amp;L (оборот 400+ млн руб., штат 80 человек).</p>
+      <div class="sub">Достижения</div>
+      <ul>
+        <li>Вывел направление на прибыльность (+75 млн руб. в год): реструктуризация отдела продаж, новые инструменты продаж и клиентский путь, оптимизация планирования и взаимодействия подразделений, изменение технологических процессов.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><div class="pos">Руководитель производства</div><div class="dates">08.2018 — 01.2020</div></div>
+      <p class="desc">Прямая ответственность за производство и персонал; технология, себестоимость и ценообразование продукции.</p>
+      <div class="sub">Достижения</div>
+      <ul>
+        <li>Увеличил производительность на 30% и сократил брак в 3 раза: изменение технологии, сокращение простоев, перераспределение обязанностей.</li>
+      </ul>
+    </div>
+
+    <div class="job last">
+      <div class="top"><div class="pos">Руководитель отдела инвестиций</div><div class="dates">09.2016 — 07.2018</div></div>
+      <p class="desc">Управление строительством завода декоративной печати площадью 3 тыс. м²: от разрешительной документации до ввода в эксплуатацию, включая технологию, бюджет и работу с подрядчиками.</p>
+    </div>
+
+    <div class="company">ОАО «Петрохимоптторг», Санкт-Петербург</div>
+    <div class="job">
+      <div class="top"><div class="pos">Технический директор</div><div class="dates">09.2015 — 08.2016</div></div>
+      <p class="desc">Техническая служба по обслуживанию складских и офисных зданий (200+ тыс. м²), новое строительство и реконструкция.</p>
+      <div class="sub">Достижения</div>
+      <ul>
+        <li>Реализовал строительство двух складов по 28 тыс. м² и холодильного склада 7 тыс. м².</li>
+        <li>Перевёл котельные мощностью 10 МВт с СУГ на природный газ.</li>
+      </ul>
+    </div>
+    <div class="job last">
+      <div class="top"><div class="pos">Ведущий инженер</div><div class="dates">02.2015 — 08.2015</div></div>
+      <p class="desc">Сопровождение строительства складов: разрешительная документация, проверка проектных решений и смет, контроль качества на объекте.</p>
+    </div>
+
+    <div class="company">АО «Слотекс», Санкт-Петербург</div>
+    <div class="job">
+      <div class="top"><div class="pos">Менеджер проекта</div><div class="dates">01.2012 — 01.2015</div></div>
+      <p class="desc">Предложения по росту мощностей и снижению затрат с экономическим и инженерным обоснованием, разрешительная документация, работа с подрядчиками и поставщиками оборудования.</p>
+      <div class="sub">Проекты</div>
+      <ul>
+        <li>Участвовал в инвестиционном проекте с городом: строительство мебельного завода в Санкт-Петербурге (8 тыс. м²).</li>
+        <li>Реконструкция здания и запуск линии по производству столешниц (7 тыс. м², 200+ млн руб.).</li>
+      </ul>
+    </div>
+    <div class="job last">
+      <div class="top"><div class="pos">Продукт-менеджер</div><div class="dates">10.2010 — 12.2011</div></div>
+      <p class="desc">Запуск новых продуктов: расчёт цен и затрат на выпуск, презентации и каталоги, контроль сроков и качества, обратная связь от партнёров.</p>
+    </div>
+
+    <div class="company">Вооружённые силы РФ</div>
+    <div class="job last">
+      <div class="top"><div class="pos">Заместитель командира роты материально-технического обеспечения</div><div class="dates">07.2008 — 08.2010</div></div>
+      <p class="desc">Эксплуатация и ремонт вооружения и военной техники.</p>
+    </div>
+  </section>
+
+  <div class="two">
+    <section style="margin:0">
+      <h2>Компетенции</h2>
+      <div class="skill">
+        <h3>Управление бизнесом</h3>
+        <p>P&amp;L, EBITDA, денежные потоки, ROI · бюджетирование и долгосрочное планирование · стратегический менеджмент · управление рисками</p>
+        <h3>Производство</h3>
+        <p>Управление производством · строительство и запуск заводов · модернизация мощностей · себестоимость · оптимизация и автоматизация процессов</p>
+        <h3>Продажи и рынок</h3>
+        <p>B2B-продажи · дилерские сети · DIY-сети · вывод новых продуктов · маркетинговая стратегия</p>
+        <h3>Команда</h3>
+        <p>Построение управленческой команды · подбор персонала · создание структуры с нуля</p>
+      </div>
+    </section>
+
+    <section style="margin:0">
+      <h2>Образование</h2>
+      <div class="edu"><span class="y">2025</span><b>MBA</b><span>НИУ «Высшая школа экономики», Москва</span></div>
+      <div class="edu"><span class="y">2015</span><b>Промышленное и гражданское строительство</b><span>Санкт-Петербургский государственный архитектурно-строительный университет</span></div>
+      <div class="edu"><span class="y">2013</span><b>Юриспруденция</b><span>Российский новый университет, Москва</span></div>
+      <div class="edu"><span class="y">2008</span><b>Стартовые и технические комплексы ракет и космических аппаратов</b><span>Военно-космическая академия им. А.Ф. Можайского, Санкт-Петербург</span></div>
+      <h2 style="margin-top:20px">Языки</h2>
+      <div class="plain">
+        <p>Русский <span>— родной</span></p>
+        <p>Английский <span>— B1, средний</span></p>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer class="wrap">
+  Игорь Ячковский · <a href="mailto:igor.yachkovsky@gmail.com">igor.yachkovsky@gmail.com</a> · <a href="HH_URL" target="_blank" rel="noopener">hh.ru</a>
+</footer>
+
+</body>
+</html>
