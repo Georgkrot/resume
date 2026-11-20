@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /Yachkovsky_Igor_CEO.pdf
+Disallow: /photo.png
